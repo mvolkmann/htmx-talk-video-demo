@@ -51,7 +51,7 @@ app.use("/*", serveStatic({ root: "./public" }));
 
 app.post("/country", async (c: Context) => {
   const formData = await c.req.formData();
-  const name = (formData.get("name") as string) || "";
+  const name = formData.get("name") as string;
   const data = countryMap[name];
   if (data) {
     return c.html(
