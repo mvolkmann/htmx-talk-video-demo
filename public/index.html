@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Country Information</title>
+    <style>
+      label {
+        font-weight: bold;
+      }
+    </style>
+    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+  </head>
+  <body>
+    <form
+      hx-disabled-elt-"#submit-btn"
+      hx-on:htmx:after-request="this.reset()"
+      hx-post="/country"
+      hx-target="#info"
+    >
+      <input name="name" placeholder="Country Name" />
+      <button id="submit-btn">Submit</button>
+    </form>
+    <div id="info"></div>
+  </body>
+</html>
