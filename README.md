@@ -1,9 +1,10 @@
-# htmx Video Demo
+# htmx Talk Video Demo
 
 This is a web application that demonstrates the basic use of htmx.
-It is built with Bun, TypeScript, htmx, and Hono.
+I use it in a video that promotes a talk I give on htmx.
+The app is built with Bun, TypeScript, htmx, and Hono.
 
-To run it:
+To run the app:
 
 - Enter `bun install`
 - Enter `bun dev`
