@@ -11,7 +11,7 @@
   </head>
   <body>
     <form
-      hx-disabled-elt-"#submit-btn"
+      hx-disabled-elt="#submit-btn"
       hx-on:htmx:after-request="this.reset()"
       hx-post="/country"
       hx-target="#info"
