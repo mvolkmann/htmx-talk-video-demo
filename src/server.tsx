@@ -73,7 +73,7 @@ app.post("/country", async (c: Context) => {
     );
   }
 
-  return c.html(<h1>No data is available for the country "{name}".</h1>);
+  return c.html(<h3>No data is available for the country "{name}".</h3>);
 });
 
 export default app;
